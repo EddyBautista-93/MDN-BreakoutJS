@@ -19,8 +19,9 @@ var ctx = canvas.getContext("2d")
 
 // Example code to create a red square 
 
-ctx.beginPath();
+ctx.beginPath(); // creates a new path by emptying the subpath 
 ctx.rect(20, 40, 50, 50);
 ctx.fillStyle = "#FF0000";
 ctx.fill();
-ctx.closePath();
+ctx.closePath(); // The CanvasRenderingContext2D.closePath() method of the 
+                 // Canvas 2D API attempts to add a straight line from the current point to the start of the current sub-path. If the shape has already been closed or has only one point, this function does nothing.
